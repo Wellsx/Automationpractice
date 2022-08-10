@@ -8,16 +8,13 @@ describe('Item purchase test', () => {
       .should('be.visible')
       .click();
 
-    cy.get(
-      '.first-in-line.first-item-of-tablet-line > .product-container > .right-block > h5 > .product-name'
-    )
-      .should('be.visible')
-      .click();
+    cy.contains('Printed Dress').should('be.visible').click();
 
     cy.get('#add_to_cart').should('be.visible').click();
-    cy.wait(3000);
-    cy.get('.button-medium > span').should('be.visible').click();
-    cy.get('.cart_navigation > .button > span').should('be.visible').click();
+    cy.wait(5000);
+    cy.contains('Proceed to checkout').click();
+    cy.url().should('include', 'controller=order');
+    cy.get('.cart_navigation > .button > span').click();
 
     cy.get('#email')
       .should('be.visible')
@@ -30,18 +27,18 @@ describe('Item purchase test', () => {
     cy.get('#SubmitLogin').should('be.visible').click();
     cy.url().should('include', '?controller=order&step=1&multi-shipping=0');
 
-    cy.get('.cart_navigation > .button > span').should('be.visible').click();
+    cy.get('.cart_navigation > .button > span').click();
     cy.url().should('contain', '?controller=order');
 
     cy.get('#cgv').click();
 
-    cy.get('.cart_navigation > .button > span').should('be.visible').click();
+    cy.get('.cart_navigation > .button > span').click();
     cy.url().should('contain', '?controller=order&multi-shipping=');
 
     cy.get('.cheque').should('be.visible').click();
     cy.url().should('contain', '?fc=module&module=cheque&controller=payment');
 
-    cy.get('#cart_navigation > .button > span').should('be.visible').click();
+    cy.get('.cart_navigation > .button > span').click();
     cy.url().should('contain', '?controller=order-confirmation');
     cy.get('.alert').should('have.class', 'alert alert-success');
   });
