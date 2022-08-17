@@ -6,8 +6,6 @@ module.exports = defineConfig({
     baseUrl: 'http://automationpractice.com/index.php',
     video: false,
     watchForFileChanges: false,
-    viewportHeight: 600,
-    viewportWidth: 800,
-    defaultCommandTimeout: 6000,
+    defaultCommandTimeout: 20000,
   },
 });

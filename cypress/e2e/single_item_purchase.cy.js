@@ -4,17 +4,18 @@ describe('Item purchase test', () => {
   it('Adds dress to cart and purchases it', () => {
     cy.visit('/');
 
-    cy.get('.sf-menu > :nth-child(2) > .sf-with-ul')
-      .should('be.visible')
-      .click();
+    cy.get('[title=Women]').first().click();
+    cy.url().should(
+      'eq',
+      'http://automationpractice.com/index.php?id_category=3&controller=category'
+    );
 
-    cy.contains('Printed Dress').should('be.visible').click();
+    cy.get('a').find('[title="Printed Dress"]').first().click();
 
     cy.get('#add_to_cart').should('be.visible').click();
-    cy.wait(5000);
     cy.contains('Proceed to checkout').click();
     cy.url().should('include', 'controller=order');
-    cy.get('.cart_navigation > .button > span').click();
+    cy.get('p').find('[title="Proceed to checkout"]').click();
 
     cy.get('#email')
       .should('be.visible')
@@ -27,18 +28,18 @@ describe('Item purchase test', () => {
     cy.get('#SubmitLogin').should('be.visible').click();
     cy.url().should('include', '?controller=order&step=1&multi-shipping=0');
 
-    cy.get('.cart_navigation > .button > span').click();
+    cy.get('p').find('[type="submit"]').click();
     cy.url().should('contain', '?controller=order');
 
     cy.get('#cgv').click();
 
-    cy.get('.cart_navigation > .button > span').click();
+    cy.get('p').find('[type="submit"]').click();
     cy.url().should('contain', '?controller=order&multi-shipping=');
 
     cy.get('.cheque').should('be.visible').click();
     cy.url().should('contain', '?fc=module&module=cheque&controller=payment');
 
-    cy.get('.cart_navigation > .button > span').click();
+    cy.get('p').find('[type="submit"]').click();
     cy.url().should('contain', '?controller=order-confirmation');
     cy.get('.alert').should('have.class', 'alert alert-success');
   });
