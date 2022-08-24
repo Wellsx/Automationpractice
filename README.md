@@ -4,11 +4,11 @@
 
 - [registration.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/registration.cy.js) - Registers a new user
 
-- [invalid_registration.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/invalid_registration.cy.js) - Register a new user with no mandatory fields filled
+- [invalid_registration.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/invalid_registration.cy.js) - Negative test case. Register a new user with no mandatory fields filled
 
 - [login.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/login.cy.js) - Logging in test
 
-- [invalid_login.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/invalid_login.cy.js) - Logging in with invalid credentials
+- [invalid_login.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/invalid_login.cy.js) - Negative test case. Logging in with invalid credentials
 
 - [logout.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/logout.cy.js) - Logging out test
 
