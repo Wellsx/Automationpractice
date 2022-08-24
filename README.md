@@ -1,6 +1,6 @@
-# automationpractice
+# Automation practice
 
-## Automationpractice.com cypress automated tests
+## [automationpractice.com](http://automationpractice.com/index.php?) automation testing using [Cypress.io](https://www.cypress.io/)
 
 - [registration.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/registration.cy.js) - Registers a new user
 
