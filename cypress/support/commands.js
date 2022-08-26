@@ -1,8 +1,8 @@
-Cypress.Commands.add('login', (Email, password) => {
+Cypress.Commands.add('login', (email, password) => {
   cy.visit('/');
   cy.get('.login').should('be.visible').click();
   cy.get('#login_form').should('be.visible');
-  cy.get('#email').should('be.visible').type(Email).should('have.value', Email);
+  cy.get('#email').should('be.visible').type(email).should('have.value', email);
   cy.get('#passwd')
     .should('be.visible')
     .type(password)

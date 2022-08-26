@@ -23,3 +23,9 @@ search.cy.js - Testing the search bar functionality
 cart_check_out_button.cy.js - Testing cart check out button functionality
 
 cart_remove_item.cy.js - Testing quick remove from cart button functionality
+
+order_history.cy.js - Testing the order history page
+
+update_address.cy.js - Logging in and updating the user delivery address
+
+wishlist.cy.js - Adding an item to "My Wishlist" and creating a new wishlist
