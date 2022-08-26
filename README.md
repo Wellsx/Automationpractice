@@ -22,15 +22,6 @@
 
 - [cart_check_out_button.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/cart_check_out_button.cy.js) - Testing cart check out button functionality
 
-<<<<<<< HEAD
-cart_remove_item.cy.js - Testing quick remove from cart button functionality
-
-order_history.cy.js - Testing the order history page
-
-update_address.cy.js - Logging in and updating the user delivery address
-
-wishlist.cy.js - Adding an item to "My Wishlist" and creating a new wishlist
-=======
 - [cart_remove_item.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/cart_remove_item.cy.js) - Testing quick remove from cart button functionality
 
 - [order_history.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/order_history.cy.js) - Testing the order history page
@@ -38,4 +29,6 @@ wishlist.cy.js - Adding an item to "My Wishlist" and creating a new wishlist
 - [update_address.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/update_address.cy.js) - Logging in and updating the user delivery address
 
 - [wishlist.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/wishlist.cy.js) - Adding an item to "My Wishlist" and creating a new wishlist
->>>>>>> f997353104e0f9356747045e7c32559293c9d80f
+
+- [top_menu.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/top_menu.cy.js) - Testing all top menu and hover menu buttons
+
