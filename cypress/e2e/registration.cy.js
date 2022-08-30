@@ -5,7 +5,11 @@ describe('Registration test', () => {
     cy.visit('/');
 
     cy.get('.login').should('be.visible').click();
-    cy.url().should('contain', 'controller=authentication&back=my-account');
+    cy.url().should(
+      'eq',
+      Cypress.config().baseUrl +
+        '/index.php?controller=authentication&back=my-account'
+    );
     cy.get('#SubmitCreate').should('be.visible');
 
     cy.get('#email_create')
@@ -16,8 +20,9 @@ describe('Registration test', () => {
     cy.get('#SubmitCreate').should('be.visible').click();
 
     cy.url().should(
-      'contain',
-      'controller=authentication&back=my-account#account-creation'
+      'eq',
+      Cypress.config().baseUrl +
+        '/index.php?controller=authentication&back=my-account#account-creation'
     );
     cy.get('#customer_firstname')
       .should('be.visible')
@@ -79,7 +84,10 @@ describe('Registration test', () => {
       .should('have.value', Data.address);
 
     cy.get('#submitAccount').should('be.visible').click();
-    cy.url().should('contain', 'controller=my-account');
+    cy.url().should(
+      'eq',
+      Cypress.config().baseUrl + '/index.php?controller=my-account'
+    );
     cy.get('.logout').should('be.visible');
   });
 });

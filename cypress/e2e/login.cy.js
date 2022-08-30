@@ -12,7 +12,10 @@ describe('Login', () => {
       .type('123456')
       .should('have.value', '123456');
     cy.get('#SubmitLogin').should('be.visible').click();
-    cy.url().should('include', 'controller=my-account');
-    cy.get('.page-heading').should('contain', 'My account');
+    cy.url().should(
+      'eq',
+      Cypress.config().baseUrl + '/index.php?controller=my-account'
+    );
+    cy.get('.page-heading').should('be.visible').and('contain', 'My account');
   });
 });

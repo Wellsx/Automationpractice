@@ -8,6 +8,9 @@ Cypress.Commands.add('login', (email, password) => {
     .type(password)
     .should('have.value', password);
   cy.get('#SubmitLogin').should('be.visible').click();
-  cy.url().should('include', 'controller=my-account');
-  cy.get('.page-heading').should('contain', 'My account');
+  cy.url().should(
+    'eq',
+    Cypress.config().baseUrl + '/index.php?controller=my-account'
+  );
+  cy.get('.page-heading').should('be.visible').and('contain', 'My account');
 });

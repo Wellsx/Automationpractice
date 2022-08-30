@@ -4,7 +4,11 @@ describe('Invalid registration', () => {
     cy.visit('/');
 
     cy.get('.login').should('be.visible').click();
-    cy.url().should('contain', 'controller=authentication&back=my-account');
+    cy.url().should(
+      'eq',
+      Cypress.config().baseUrl +
+        '/index.php?controller=authentication&back=my-account'
+    );
     cy.get('#SubmitCreate').should('be.visible');
 
     cy.get('#email_create')
@@ -13,14 +17,18 @@ describe('Invalid registration', () => {
       .should('have.value', Data.uniqueEmailAddress);
     cy.get('#SubmitCreate').should('be.visible').click();
     cy.url().should(
-      'contain',
-      'controller=authentication&back=my-account#account-creation'
+      'eq',
+      Cypress.config().baseUrl +
+        '/index.php?controller=authentication&back=my-account#account-creation'
     );
     cy.get('#submitAccount').should('be.visible').click();
-    cy.get('#center_column').should('contain', 'There are 8 errors');
+    cy.get('#center_column')
+      .should('be.visible')
+      .and('contain', 'There are 8 errors');
     cy.get('ol')
       .children()
-      .should('contain', 'You must register at least one phone number.')
+      .should('be.visible')
+      .and('contain', 'You must register at least one phone number.')
       .and('contain', 'lastname is required.')
       .and('contain', 'firstname is required.')
       .and('contain', 'passwd is required.')

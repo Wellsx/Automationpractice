@@ -15,9 +15,11 @@ describe('Invalid login', () => {
     cy.get('#SubmitLogin').should('be.visible').click();
     cy.url().should(
       'eq',
-      'http://automationpractice.com/index.php?controller=authentication'
+      Cypress.config().baseUrl + '/index.php?controller=authentication'
     );
-    cy.get('#center_column').should('contain', 'There is 1 error');
-    cy.get('ol').should('contain', 'Authentication failed.');
+    cy.get('#center_column')
+      .should('be.visible')
+      .and('contain', 'There is 1 error');
+    cy.get('ol').should('be.visible').and('contain', 'Authentication failed.');
   });
 });

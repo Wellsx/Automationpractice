@@ -4,6 +4,10 @@ describe('Customer Service message test', () => {
   it('Typing a sample message and uploading an image', () => {
     cy.visit('/');
     cy.get('#contact-link').should('be.visible').click();
+    cy.url().should(
+      'eq',
+      Cypress.config().baseUrl + '/index.php?controller=contact'
+    );
     cy.get('#id_contact').select('Customer service').should('have.value', '2');
     cy.get('#email')
       .should('be.visible')
@@ -15,6 +19,10 @@ describe('Customer Service message test', () => {
       .should('have.value', '12345');
     cy.get('#fileUpload').selectFile('cypress/support/dress.jpg');
     cy.get('#message').type(
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+    );
+    cy.get('#message').should(
+      'have.value',
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
     );
     cy.get('#submitMessage').should('be.visible').click();
