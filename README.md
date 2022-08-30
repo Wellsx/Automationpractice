@@ -31,7 +31,4 @@
 - [wishlist.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/wishlist.cy.js) - Adding an item to "My Wishlist" and creating a new wishlist
 
 - [top_menu.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/top_menu.cy.js) - Testing all top menu and hover menu buttons
-<<<<<<< HEAD
-=======
 
->>>>>>> 4d52a15700b145e67cebf5dacdb409e4488e0f24
