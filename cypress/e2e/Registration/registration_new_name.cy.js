@@ -1,7 +1,7 @@
 import Data from '../support/data';
 
-describe('Registration test', () => {
-  it('Registers a new user', () => {
+describe('Registration', () => {
+  it('Registers a new user with a different address name', () => {
     cy.visit('/');
 
     cy.get('.login').should('be.visible').click();
@@ -24,6 +24,7 @@ describe('Registration test', () => {
       Cypress.config().baseUrl +
         '/index.php?controller=authentication&back=my-account#account-creation'
     );
+
     cy.get('#customer_firstname')
       .should('be.visible')
       .type(Data.firstName)
@@ -49,7 +50,11 @@ describe('Registration test', () => {
       .type(Data.new_firstName)
       .should('have.value', Data.new_firstName);
 
-    cy.get('#lastname').should('be.visible').and('have.value', Data.lastName);
+    cy.get('#lastname')
+      .should('be.visible')
+      .clear()
+      .type(Data.new_lastName)
+      .should('have.value', Data.new_lastName);
 
     cy.get('#address1')
       .should('be.visible')

@@ -1,6 +1,6 @@
-import Data from '../support/data';
+import Data from '../../support/data';
 describe('Invalid registration', () => {
-  it('Registering a new user with missing mandatory fields', () => {
+  it('Registers a new user with missing mandatory fields', () => {
     cy.visit('/');
 
     cy.get('.login').should('be.visible').click();
