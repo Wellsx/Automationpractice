@@ -21,18 +21,18 @@
 - [invalid_login_username.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/User_Account/invalid_login_username.cy.js) - Negative test case. Logging in with invalid username
 - [invalid_login_password.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/User_Account/invalid_login_password.cy.js) - Negative test case. Logging in with invalid password
 - [logout.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/User_Account/logout.cy.js) Logging user out
-- [order_history.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/order_history.cy.js) - Testing the order history page
-- [update_address.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/update_address.cy.js) - Logging in and updating the user delivery address
-- [wishlist.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/wishlist.cy.js) - Adding an item to "My Wishlist" and creating a new wishlist
+- [order_history.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/User_Account/order_history.cy.js) - Testing the order history page
+- [update_address.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/User_Account/update_address.cy.js) - Logging in and updating the user delivery address
+- [wishlist.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/User_Account/wishlist.cy.js) - Adding an item to "My Wishlist" and creating a new wishlist
 
 </details>
 
 <details>
     <summary>Menu buttons</summary>
 
-- [top_menu.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/top_menu.cy.js) - Testing all top menu and hover menu buttons
-- [customer_service.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/customer_service.cy.js) - Writes an email to customer service with an image attachment
-- [search.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/search.cy.js) - Testing the search bar functionality
+- [top_menu.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/Menu_Buttons/top_menu.cy.js) - Testing all top menu and hover menu buttons
+- [customer_service.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/Menu_Buttons/customer_service.cy.js) - Writes an email to customer service with an image attachment
+- [search.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/Menu_Buttons/search.cy.js) - Testing the search bar functionality
 - [Sign_in.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/Menu_Buttons/Sign_in.cy.js) Testing the Sign in button
 
 </details>
@@ -40,9 +40,9 @@
 <details>
     <summary>Item Purchase</summary>
 
-- [single_item_purchase.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/single_item_purchase.cy.js) - Adds an item to the cart, logs the user in and purchases the item.
-- [multiple_item_purchase](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/multiple_item_purchase.cy.js) - Logging the user in and purchasing multiple items
-- [cart_check_out_button.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/cart_check_out_button.cy.js) - Testing cart check out button functionality
-- [cart_remove_item.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/cart_remove_item.cy.js) - Testing quick remove from cart button functionality
+- [single_item_purchase.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/Item_Purchase/single_item_purchase.cy.js) - Adds an item to the cart, logs the user in and purchases the item.
+- [multiple_item_purchase](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/Item_Purchasemultiple_item_purchase.cy.js) - Logging the user in and purchasing multiple items
+- [cart_check_out_button.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/Item_Purchase/cart_check_out_button.cy.js) - Testing cart check out button functionality
+- [cart_remove_item.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/Item_Purchase/cart_remove_item.cy.js) - Testing quick remove from cart button functionality
 
 </details>
