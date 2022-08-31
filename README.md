@@ -17,7 +17,7 @@
 <details>
     <summary>User Account</summary>
 
-- [login.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/login.cy.js) - Logging in test
+- [login.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/User_Account/login.cy.js) - Logging in test
 - [invalid_login_username.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/User_Account/invalid_login_username.cy.js) - Negative test case. Logging in with invalid username
 - [invalid_login_password.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/User_Account/invalid_login_password.cy.js) - Negative test case. Logging in with invalid password
 - [logout.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/User_Account/logout.cy.js) Logging user out
@@ -41,7 +41,7 @@
     <summary>Item Purchase</summary>
 
 - [single_item_purchase.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/Item_Purchase/single_item_purchase.cy.js) - Adds an item to the cart, logs the user in and purchases the item.
-- [multiple_item_purchase](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/Item_Purchasemultiple_item_purchase.cy.js) - Logging the user in and purchasing multiple items
+- [multiple_item_purchase](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/Item_Purchase/multiple_item_purchase.cy.js) - Logging the user in and purchasing multiple items
 - [cart_check_out_button.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/Item_Purchase/cart_check_out_button.cy.js) - Testing cart check out button functionality
 - [cart_remove_item.cy.js](https://github.com/Wellsx/Automationpractice/blob/main/cypress/e2e/Item_Purchase/cart_remove_item.cy.js) - Testing quick remove from cart button functionality
 
